@@ -91,8 +91,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'a4cb0ab8f841b8fcfedb6e8b3bfc876c',
+#        'USER': 'django',
+        'USER' : 'doadmin',
+#        'PASSWORD': 'a4cb0ab8f841b8fcfedb6e8b3bfc876c',
+        'PASSWORD' : 'AVNS_hicNsygXk3rftAMdMW1',
         'HOST': 'dbaas-db-7261894-do-user-8548218-0.c.db.ondigitalocean.com',
         'PORT': '25060',
         'OPTIONS': {'sslmode': 'require'},
