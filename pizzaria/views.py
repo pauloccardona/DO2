@@ -12,15 +12,15 @@ from pizzaria.serializers import(
 )
 
 class ToppingViewSet(ModelViewSet):
-    queryset = Topping.Objects.all()
+    queryset = Topping.objects.all()
     serializer_class = ToppingSerializer
 
 class PizzaViewSet(ModelViewSet):
-    queryset = Pizza.Objects.all()
+    queryset = Pizza.objects.all()
     serializer_class = PizzaSerializer
 
 class OrderViewSet(ModelViewSet):
-    queryset = Order.Objects.all()
+    queryset = Order.objects.all()
     
     def get_serializer_class(self):
         if self.action in ("create", "update", "partial_update"):
