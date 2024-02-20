@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from pizzaria.views import WaitressViewSet, OrderViewSet, PizzaViewSet, ToppingViewSet
+from pizzaria.views import OrderViewSet, PizzaViewSet, ToppingViewSet
 
 
 router = routers.DefaultRouter()
