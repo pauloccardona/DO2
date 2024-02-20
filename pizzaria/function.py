@@ -1,9 +1,9 @@
 import json
 
-def attemp_json_deserialize(data, expect_type=none):
+def attemp_json_deserialize(data, expect_type=None):
     try:
         data = json.loads(data)
-    expect(TypeError, json.decoder.JSONDecodeError): pass
+    except(TypeError, json.decoder.JSONDecodeError): pass
 
     if expect_type is not None and not isinstance(data, expect_type):
         raise ValueError(f"Got {type(data)} but expected {expect_type}.")
