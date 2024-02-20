@@ -19,7 +19,7 @@ class ToppingSerializer(serializers.ModelSerializer):
         fields= ('name')
 
 class PizzaSerializer(serializers.ModelSerializer):
-    order= OrderSummarySerializser(read_only= True)
+    order= OrderSummarySerializer(read_only= True)
     waitress= WaitressSerializer(read_only= True)
     toppings= ToppingSerializer(read_only= True, many=True)
 
