@@ -20,12 +20,11 @@ from rest_framework import routers
 from pizzaria.views import OrderViewSet, PizzaViewSet, ToppingViewSet
 
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 
 router.register("orders", OrderViewSet, "orders")
 router.register("pizzas", PizzaViewSet, "pizzas")
 router.register("toppings", ToppingViewSet, 'toppings')
 
 urlpatterns = [
-    path('pizzaria/', include (router.urls))
-]
+] + router.urls
