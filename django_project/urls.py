@@ -27,4 +27,5 @@ router.register(r'pizzas', PizzaViewSet, basename = "pizzas")
 router.register(r'toppings', ToppingViewSet, basename = "toppings")
 
 urlpatterns = [
-] + router.urls
+    path('',views.index, name='index')
+]
