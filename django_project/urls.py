@@ -22,9 +22,9 @@ from pizzaria.views import OrderViewSet, PizzaViewSet, ToppingViewSet
 
 router = routers.SimpleRouter()
 
-router.register(r'orders', views.OrderViewSet, basename = "orders")
-router.register(r'pizzas', views.PizzaViewSet, basename = "pizzas")
-router.register(r'toppings', views.ToppingViewSet, basename = "toppings")
+router.register(r'orders', OrderViewSet, basename = "orders")
+router.register(r'pizzas', PizzaViewSet, basename = "pizzas")
+router.register(r'toppings', ToppingViewSet, basename = "toppings")
 
 urlpatterns = [
 ] + router.urls
